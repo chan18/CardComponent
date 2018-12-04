@@ -1,0 +1,32 @@
+{
+"items": [
+            {
+                "lawFirmName": "lawFirmName",
+                "plaintiffCount": 10,
+                "description": "aLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+                "expectedDate": "11-08-2018",
+                "receivedDate": "01-08-2018",
+                "Obj": [
+                          {
+                            "fileNumber1": {
+                                            "file": "file.pdf",
+                                            "fileName": "fileName",
+                                            "docCount": "DocumentCount",
+                                            "docPath": "DocumentPath",
+                                            "receivedDate": "receivedDate",
+                                            "expectedDate": "expectedDate"
+                                           },
+                            "fileNumber2": {
+                                            "file": "file.pdf",
+                                            "fileName": "file_name",
+                                            "docCount": "docCount",
+                                            "docPath": "DocumentPath",
+                                            "receivedDate": "receivedDate",
+                                            "expectedDate": "expectedDate"
+                                           }                       
+                          }
+                       ]
+            }            
+         ]
+}
+

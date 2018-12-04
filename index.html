@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>     
+        <link type="text/css" rel="stylesheet" media="all" />
+        <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+    </head>
+    <body>
+        <div id="target"></div>        
+    </body>
+    <template id='content'>
+        <div class="cardWrapper">            
+            <ul class="card">
+                <li class="card-icon">icon</li>
+                <li class="card-mid">
+                    <div class="card-title">   
+                        <h1 data-task-title="">Name of the LawFirm</h1> 
+                        <p data-task-plaintiff-count="">6 is an example number</p>
+                        <ul data-task-details="">
+                            <li data-task-priority="">
+                                <svg viewBox="0 0 24 24"><use xlink:href="#expandIcon"/>Icon</svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-task-description="" class="card-description">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</span>                        
+                    </div>           
+                    <div class="card-timestamp-actions">
+                        <ul class="card-timestamp-actions-left">
+                            <li><label data-task-received-data="">Received date:</label>
+                                <span>MM/DD/YY</span>
+                            </li>
+                            <li><label data-task-expected-data="">Expected Delivery Date:</label>
+                                <span>MM/DD/YY</span>
+                            </li>      
+                        </ul>
+                        <ul class="card-timestamp-actions-right">
+                            <li>icon-1</li>
+                            <li>icon-2</li>
+                            <li>icon-3</li>
+                        </ul>      
+                    </div>
+                </li>  
+                <li class="card-button">
+                    <button>Send</button>
+                </li>
+            </ul>  
+        </div>
+    </template>       
+    <script src="index.js"></script>    
+</html>
