@@ -3,12 +3,39 @@
     <head>     
         <link type="text/css" rel="stylesheet" media="all" />
         <link rel="stylesheet" type="text/css" href="dist/css/style.css">
-    </head>
+    </head>    
     <body>
-        <div id="target"></div>        
+        <div id="target"></div>   
+              
     </body>
-    <template id='content'>
-        <div class="cardWrapper">            
+    <template id='content'>     
+        <card data-card-id="uniqueID">
+            <card-priority></card-priority>
+            <card-mid>
+                <card-title data-task-title="" class="">
+                    <span>Name of the LawFirm</span>
+                    <span>&Backslash;</span>
+                    <span data-task-plaintiff-count="1" >{{dataTaskPlaintiffCoun}}</span>
+                    <a href="javascript:void(0);" data-details=""><svg viewBox="0 0 24 24"><use xlink:href="#expandIcon"/>Icon</svg></a>
+                </card-title>
+                <card-short-message data-task-description="">message</card-short-message>
+                <rec-date>Received date:<span data-task-received-data="a">MM/DD/YY</span></rec-date>
+                <ed-date>Expected Delivery Date:<span data-task-expected-data="a">MM/DD/YY</span></ed-date>
+                <ul class="card-timestamp-actions-right">
+                    <li><a href="javascript:void(0);" data-details=""><svg viewBox="0 0 24 24"><use xlink:href="#more"/>Icon</svg></a></li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:void(0);" data-details=""><svg viewBox="0 0 24 24"><use xlink:href="#Notification"/>Icon</svg></a></li>
+                            <li><a href="javascript:void(0);" data-details=""><svg viewBox="0 0 24 24"><use xlink:href="#alert"/>Icon</svg></a></li>
+                            <li><a href="javascript:void(0);" data-details=""><svg viewBox="0 0 24 24"><use xlink:href="#comments"/>Icon</svg></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </card-mid>
+            <group-action> <button data-uniqueID="uniqueID">Send</button> </group-action>
+        </card>        
+    </template>
+      <!-- <div class="cardWrapper">            
             <ul class="card">
                 <li class="card-icon">icon</li>
                 <li class="card-mid">
@@ -44,7 +71,6 @@
                     <button>Send</button>
                 </li>
             </ul>  
-        </div>
-    </template>       
+        </div> -->
     <script src="index.js"></script>    
 </html>
